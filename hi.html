@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vigilance Awareness Week - APCOB</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Load Inter font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Load Lucide icons -->
+    <script src="https://unpkg.com/lucide-react@0.395.0/dist/lucide-react.js"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        apcob: {
+                            light: '#E6F0FF',
+                            DEFAULT: '#005BBB',
+                            dark: '#003A8A',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Simple keyframe for fade-in animation */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .fade-in {
+            animation: fadeIn 0.8s ease-out forwards;
+        }
+        /* Custom styles for the page */
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .hero-gradient {
+            background: linear-gradient(135deg, #005BBB 0%, #003A8A 100%);
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+
+    <!-- Header -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <nav class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Bank Logo and Name -->
+                <div class="flex-shrink-0 flex items-center">
+                    <img class="h-10 w-auto" src="https://placehold.co/200x80/005BBB/FFFFFF?text=APCOB&font=inter" alt="APCOB Logo">
+                    <span class="ml-3 text-xl font-semibold text-apcob-dark hidden sm:block">APCOB Bank</span>
+                </div>
+                <!-- Page Title -->
+                <div class="text-center">
+                    <h1 class="text-lg sm:text-xl font-bold text-gray-800">Vigilance Awareness Week</h1>
+                </div>
+                <!-- CVC Logo (Placeholder) -->
+                <div class="flex-shrink-0">
+                     <img class="h-10 w-auto" src="https://placehold.co/100x100/FFFFFF/000000?text=CVC+Logo" alt="CVC Logo">
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-gradient text-white py-16 sm:py-24">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center fade-in">
+                <h2 class="text-base font-semibold uppercase tracking-wider text-apcob-light">Central Vigilance Commission (CVC) Initiative</h2>
+                <h1 class="mt-4 text-4xl sm:text-5xl font-extrabold tracking-tight">Vigilance Awareness Week 2025</h1>
+                <p class="mt-4 text-xl sm:text-2xl text-apcob-light font-medium">October 27<sup>th</sup> - November 2<sup>nd</sup>, 2025</p>
+                <p class="mt-6 max-w-3xl mx-auto text-lg sm:text-xl font-semibold bg-white/10 backdrop-blur-sm rounded-lg px-4 py-3">
+                    Theme: "Vigilance: Our Shared Responsibility"
+                </p>
+            </div>
+        </section>
+
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 my-12">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                
+                <!-- Left Column (Main Info) -->
+                <div class="md:col-span-2 space-y-8">
+                    
+                    <!-- What is Vigilance Awareness Week? -->
+                    <section class="bg-white p-6 rounded-lg shadow-lg fade-in" style="animation-delay: 200ms;">
+                        <div class="flex items-center mb-4">
+                            <div class="flex-shrink-0 bg-apcob-light text-apcob-dark rounded-full p-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shield-check"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10"/><path d="m9 12 2 2 4-4"/></svg>
+                            </div>
+                            <h3 class="ml-4 text-2xl font-bold text-gray-900">What is Vigilance Awareness Week?</h3>
+                        </div>
+                        <p class="text-gray-700 leading-relaxed">
+                            Vigilance Awareness Week (VAW) is an annual event observed across India, guided by the Central Vigilance Commission (CVC), the country's apex integrity institution.
+                        </p>
+                        <p class="mt-4 text-gray-700 leading-relaxed">
+                            It is celebrated during the week in which the birthday of <strong class="text-apcob-dark">Sardar Vallabhbhai Patel (October 31<sup>st</sup>)</strong> falls. The purpose of VAW is to promote integrity, transparency, and accountability in public life and to create a corruption-free society. It's a time for all stakeholders—government, public sector undertakings, banks, and citizens—to reaffirm their commitment to ethical practices.
+                        </p>
+                    </section>
+
+                    <!-- Our Commitment at APCOB -->
+                    <section class="bg-white p-6 rounded-lg shadow-lg fade-in" style="animation-delay: 400ms;">
+                        <div class="flex items-center mb-4">
+                            <div class="flex-shrink-0 bg-apcob-light text-apcob-dark rounded-full p-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-banknote"><rect width="20" height="12" x="2" y="6" rx="2"/><circle cx="12" cy="12" r="2"/><path d="M6 12h.01M18 12h.01"/></svg>
+                            </div>
+                            <h3 class="ml-4 text-2xl font-bold text-gray-900">Our Commitment at APCOB</h3>
+                        </div>
+                        <p class="text-gray-700 leading-relaxed">
+                            At Andhra Pradesh State Co-operative Bank Ltd. (APCOB), integrity is the cornerstone of our operations. We are fully committed to participating in Vigilance Awareness Week to strengthen our internal systems and promote ethical banking.
+                        </p>
+                        <ul class="mt-4 space-y-3 list-disc list-inside text-gray-700">
+                            <li><strong class="text-gray-800">Promoting Transparency:</strong> We strive for openness in our customer dealings and internal processes.</li>
+                            <li><strong class="text-gray-800">Preventive Vigilance:</strong> We continuously strengthen our Know Your Customer (KYC) norms and transaction monitoring to prevent fraud and malpractice.</li>
+                            <li><strong class="text-gray-800">Employee Sensitization:</strong> We conduct internal workshops and training to ensure all staff adhere to the highest standards of conduct.</li>
+                            <li><strong class="text-gray-800">Public Outreach:</strong> We engage with our customers and the public through "Awareness Gram Sabhas" (Village Awareness Meetings) to spread the message of integrity.</li>
+                        </ul>
+                    </section>
+
+                    <!-- Integrity Pledge for Citizens -->
+                    <section class="bg-white p-6 rounded-lg shadow-lg fade-in" style="animation-delay: 600ms;">
+                        <div class="flex items-center mb-4">
+                            <div class="flex-shrink-0 bg-apcob-light text-apcob-dark rounded-full p-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-file-text"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"/><path d="M14 2v4a2 2 0 0 0 2 2h4"/><path d="M10 9H8"/><path d="M16 13H8"/><path d="M16 17H8"/></svg>
+                            </div>
+                            <h3 class="ml-4 text-2xl font-bold text-gray-900">Integrity Pledge for Citizens</h3>
+                        </div>
+                        <p class="text-gray-700 mb-4">
+                            We invite all our customers and fellow citizens to join this movement by taking the Integrity Pledge.
+                        </p>
+                        <div class="bg-gray-100 border-l-4 border-apcob-DEFAULT p-4 rounded-md text-gray-800">
+                            <p class="font-medium italic">I believe that corruption has been one of the major obstacles to economic, political and social progress of our country. I believe that all stakeholders such as Government, citizens and private sector need to work together to eradicate corruption.</p>
+                            <p class="mt-3 font-medium italic">I realize that every citizen should be vigilant and commit to the highest standards of honesty and integrity at all times and support the fight against corruption.</p>
+                            <p class="mt-4 font-semibold">I, therefore, pledge:</p>
+                            <ul class="mt-2 space-y-2 list-disc list-inside">
+                                <li>To follow probity and rule of law in all walks of life;</li>
+                                <li>To neither take nor offer bribe;</li>
+                                <li>To perform all tasks in an honest and transparent manner;</li>
+                                <li>To act in public interest;</li>
+                                <li>To lead by example exhibiting integrity in personal behaviour;</li>
+                                <li>To report any incident of corruption to the appropriate agency.</li>
+                            </ul>
+                        </div>
+                        <a href="https://pledge.cvc.nic.in/" target="_blank" rel="noopener noreferrer" class="mt-6 inline-flex items-center justify-center w-full sm:w-auto px-6 py-3 bg-apcob-DEFAULT text-white font-semibold rounded-lg shadow-md hover:bg-apcob-dark transition-colors duration-300">
+                            Take the e-Pledge on CVC Portal
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-external-link ml-2 h-5 w-5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" x2="21" y1="14" y2="3"/></svg>
+                        </a>
+                    </section>
+                </div>
+
+                <!-- Right Sidebar -->
+                <aside class="space-y-6 fade-in" style="animation-delay: 300ms;">
+                    
+                    <!-- Report a Concern -->
+                    <div class="bg-white p-6 rounded-lg shadow-lg border-t-4 border-red-600">
+                        <h3 class="text-xl font-bold text-gray-900 mb-4">Report a Concern</h3>
+                        <p class="text-gray-700 mb-4">
+                            Be a vigilant citizen. If you encounter any instance of corruption or malpractice, please report it. Your identity can be kept confidential.
+                        </p>
+                        <p class="text-sm text-gray-600">Contact APCOB's Vigilance Department:</p>
+                        
+                        <!-- Placeholder for contact info -->
+                        <div class="mt-4 space-y-3 text-gray-800">
+                            <div class="flex items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-user-check h-5 w-5 mr-3 text-apcob-dark"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><polyline points="16 11 18 13 22 9"/></svg>
+                                <span>Chief Vigilance Officer, APCOB</span>
+                            </div>
+                            <div class="flex items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail h-5 w-5 mr-3 text-apcob-dark"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                                <span>cvo[at]apcob[dot]org (Example)</span>
+                            </div>
+                            <div class="flex items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-phone h-5 w-5 mr-3 text-apcob-dark"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.63A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                                <span>0866-25XXXXX (Example)</span>
+                            </div>
+                        </div>
+                        <button class="mt-6 w-full px-4 py-2 bg-red-600 text-white font-semibold rounded-lg hover:bg-red-700 transition-colors duration-300">
+                            Lodge a Complaint Online
+                        </button>
+                    </div>
+
+                    <!-- Activities at APCOB -->
+                    <div class="bg-white p-6 rounded-lg shadow-lg">
+                        <h3 class="text-xl font-bold text-gray-900 mb-4">Our Activities</h3>
+                        <p class="text-gray-700 mb-4">
+                            During this week, APCOB and its branches will be conducting:
+                        </p>
+                        <ul class="space-y-3">
+                            <li class="flex items-start">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check-circle h-5 w-5 mr-3 text-green-600 flex-shrink-0 mt-1"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="m9 11 3 3L22 4"/></svg>
+                                <span>Administering the 'Integrity Pledge' to all employees.</span>
+                            </li>
+                            <li class="flex items-start">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check-circle h-5 w-5 mr-3 text-green-600 flex-shrink-0 mt-1"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="m9 11 3 3L22 4"/></svg>
+                                <span>Organizing debates, quizzes, and essay competitions for staff.</span>
+                            </li>
+                            <li class="flex items-start">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check-circle h-5 w-5 mr-3 text-green-600 flex-shrink-0 mt-1"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="m9 11 3 3L22 4"/></svg>
+                                <span>Displaying awareness posters and banners at all branches.</span>
+                            </li>
+                            <li class="flex items-start">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check-circle h-5 w-5 mr-3 text-green-600 flex-shrink-0 mt-1"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="m9 11 3 3L22 4"/></svg>
+                                <span>Conducting 'Awareness Gram Sabhas' in rural and semi-urban areas.</span>
+                            </li>
+                        </ul>
+                    </div>
+                </aside>
+
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-apcob-dark text-apcob-light mt-16">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-8">
+            <div class="text-center">
+                <p>&copy; 2025 The Andhra Pradesh State Co-operative Bank Ltd. (APCOB)</p>
+                <p class="text-sm text-gray-300 mt-1">Serving the farmers and rural economy of Andhra Pradesh.</p>
+                <p class="text-xs text-gray-400 mt-4">This page is for informational purposes for Vigilance Awareness Week.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
